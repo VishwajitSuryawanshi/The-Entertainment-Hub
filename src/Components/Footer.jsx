@@ -2,7 +2,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
+import { IoLogoYoutube } from "react-icons/io";
 
 const Footer = () =>{
   return (
@@ -68,7 +68,7 @@ const Footer = () =>{
       </button>
 
       <button className="nav-button-footer">
-        <a href="https://www.instagram.com/vishwajitsuryawanshi.official/" className="nav-link">
+        <a href="https://www.instagram.com/vishudha.technical/" className="nav-link">
         <FaInstagramSquare className="footer-button"/>
         </a>
       </button>
@@ -80,8 +80,8 @@ const Footer = () =>{
       </button>
 
       <button className="nav-button-footer">
-        <a href="#" className="nav-link">
-        <FaTwitter className="footer-button"/>
+        <a href="https://www.youtube.com/channel/UCjC4j8WhQdvsGoBrHaI7Hfw" className="nav-link">
+        <IoLogoYoutube className="footer-button"/>
         </a>
       </button>
       </div>

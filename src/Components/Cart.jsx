@@ -6,30 +6,30 @@ const Cart = ({cartItem, setCartItem}) =>{
 
   function inc(movies)
   {
-    const exsit = cartItem.find((x) =>{
+    const exist = cartItem.find((x) =>{
       return x.id === movies.id;
     })
     setCartItem(cartItem.map((item) => {
-      return item.id === movies.id ? {...exsit, quantity: exsit.quantity + 1 } : item
+      return item.id === movies.id ? {...exist, quantity: exist.quantity + 1 } : item
     }))
   }
 
   function dec(movies)
   {
-    const exsit = cartItem.find((x) =>{
+    const exist = cartItem.find((x) =>{
       return x.id === movies.id;
     })
     setCartItem(cartItem.map((item) => {
-      return item.id === movies.id ? {...exsit, quantity: exsit.quantity - 1 } : item
+      return item.id === movies.id ? {...exist, quantity: exist.quantity - 1 } : item
     }))
   }
 
   function removecart(movies)
   {
-    const exsit = cartItem.find((x) =>{
+    const exist = cartItem.find((x) =>{
       return x.id === movies.id;
     })
-    if(exsit.quantity > 0)
+    if(exist.quantity > 0)
     {
       setCartItem(cartItem.filter((x) =>{
         return x.id !== movies.id

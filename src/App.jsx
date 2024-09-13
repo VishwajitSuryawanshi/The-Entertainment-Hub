@@ -9,10 +9,10 @@ function App() {
 
   const [cartItem, setCartItem] = useState([]);
   const addtocart = (movies) =>{
-    const exsit = cartItem.find((x) => {
+    const exist = cartItem.find((x) => {
       return x.id === movies.id;
     })
-    if(exsit)
+    if(exist)
     {
       alert("This movie is already added")
     }
